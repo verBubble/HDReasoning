@@ -138,28 +138,33 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Creative and Descriptive Paper Title</span>
+		<span style="font-size:36px">Enhancing Datalog Reasoning with Hypertree Decompositions</span>
 		<table align=center width=600px>
 			<table align=center width=600px>
 				<tr>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">First Author</a></span>
+							<span style="font-size:24px"><a href="https://xinyuezhang.xyz/">Xinyue Zhang</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Second Author</a></span>
+							<span style="font-size:24px"><a href="https://scholar.google.com/citations?user=6FWVm1AAAAAJ&hl=en">Pan Hu</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Third Author</a></span>
+							<span style="font-size:24px"><a href="https://scholar.google.co.uk/citations?user=sKuMs1oAAAAJ&hl=en">Yavor Nenov</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://www.cs.ox.ac.uk/people/ian.horrocks/">Ian Horrocks</a></span>
 						</center>
 					</td>
 				</tr>
 			</table>
-			<table align=center width=250px>
+			<!-- <table align=center width=250px>
 				<tr>
 					<td align=center width=120px>
 						<center>
@@ -172,11 +177,11 @@
 						</center>
 					</td>
 				</tr>
-			</table>
+			</table> -->
 		</table>
 	</center>
 
-	<center>
+	<!-- <center>
 		<table align=center width=850px>
 			<tr>
 				<td width=260px>
@@ -193,7 +198,7 @@
 				</td>
 			</tr>
 		</table>
-	</center>
+	</center> -->
 
 	<hr>
 
@@ -201,19 +206,19 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				This is my abstract.
+				Datalog reasoning based on the semina\"ive evaluation strategy evaluates rules using traditional join plans, which often leads to redundancy and inefficiency in practice, especially when the rules are complex. Hypertree decompositions help identify efficient query plans and reduce similar redundancy in query answering. However, it is unclear how this can be applied to materialisation and incremental reasoning with recursive Datalog programs. Moreover, hypertree decompositions require additional data structures and thus introduce nonnegligible overhead in both runtime and memory consumption. In this paper, we provide algorithms that exploit hypertree decompositions for the materialisation and incremental evaluation of Datalog programs. Furthermore, we combine this approach with standard Datalog reasoning algorithms in a modular fashion so that the overhead caused by the decompositions is reduced. Our empirical evaluation shows that, when the program contains complex rules, the combined approach is usually significantly faster than the baseline approach, sometimes by orders of magnitude.
 			</td>
 		</tr>
 	</table>
 	<br>
 
-	<hr>
+	<!-- <hr>
 	<center><h1>Talk</h1></center>
 	<p align="center">
 		<iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
-	</p>
+	</p> -->
 
-	<table align=center width=800px>
+	<!-- <table align=center width=800px>
 		<br>
 		<tr>
 			<center>
@@ -221,7 +226,7 @@
 				</span>
 			</center>
 		</tr>
-	</table>
+	</table> -->
 	<hr>
 
 	<center><h1>Code</h1></center>
@@ -234,7 +239,7 @@
 			</tr>
 		</center>
 	</table>
-	<table align=center width=400px>
+	<!-- <table align=center width=400px>
 		<tr>
 			<td align=center width=400px>
 				<center>
@@ -242,48 +247,70 @@
 				</center>
 			</td>
 		</tr>
-	</table>
+	</table> -->
 	<table align=center width=850px>
 		<center>
 			<tr>
 				<td>
-					Short description if wanted
+					We have implemented our approach based on an old version of RDFox. The linux executables are available <a href="https://github.com/xyzBubble/HDReasoning-Benchmarks/tree/main/executable">here</a>.
+					- <i>standard</i>: This system uses seminaive algorithm for materialisation and an optimised variant of DRed for incremental maintenance. 
+					- <i>HD</i>: This system uses our hypertree decomposition based algorithms.
+					- <i>Combined</i>: This system applies HD algorithms to complex (i.e., cyclic) rules and the standard algorithms to the remaining rules.
+					The source code is available upon request at xinyue.zhang AT cs.ox.ac.uk.
 				</td>
 			</tr>
 		</center>
 	</table>
-	<table align=center width=800px>
+	<!-- <table align=center width=800px>
 		<br>
 		<tr><center>
 			<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/webpage-template'>[GitHub]</a>
 			</center>
 		</span>
-	</table>
+	</table> -->
 	<br>
 	<hr>
+	<center><h1>Datasets and Datalog Programs</h1></center>
+	<table align=center width=850px>
+		<center>
+			<tr>
+				<td>
+					The test datasets and Datalog programs used in our paper are available <a href="https://github.com/xyzBubble/HDReasoning-Benchmarks/tree/main">here</a>. This repo also includes the instructions to reproduce the experiment results. 
+				</td>
+			</tr>
+		</center>
+	</table>
+	<!-- <hr>
 	<table align=center width=450px>
 		<center><h1>Paper and Supplementary Material</h1></center>
 		<tr>
 			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
 			<td><span style="font-size:14pt">F. Author, S. Author, T. Author.<br>
 				<b>Creative and Descriptive Paper Title.</b><br>
-				In Conference, 20XX.<br>
+				In IJCAI, 2023.<br>
 				(hosted on <a href="">ArXiv</a>)<br>
-				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
+				<a href="./resources/camera-ready.pdf">camera ready</a><br>
 				<span style="font-size:4pt"><a href=""><br></a>
 				</span>
 			</td>
 		</tr>
 	</table>
-	<br>
+	<br> -->
 
-	<table align=center width=600px>
+	<!-- <table align=center width=750px>
 		<tr>
-			<td><span style="font-size:14pt"><center>
-				<a href="./resources/bibtex.txt">[Bibtex]</a>
-			</center></td>
+			<td>
+				<div style="color:#171B21; background-color:#F5F5F5; border: 1px solid #CCCCCC;; border-radius:5px; padding:10px; font-family: menlo; font-size: 0.8em">
+					@inproceedings{wen2022slotcon,<br>
+					&nbsp title={Self-Supervised Visual Representation Learning with Semantic Grouping},<br>
+					&nbsp author={Wen, Xin and Zhao, Bingchen and Zheng, Anlin and Zhang, Xiangyu and Qi, Xiaojuan},<br>
+					&nbsp booktitle={Advances in Neural Information Processing Systems},<br>
+					&nbsp year={2022}<br>
+					  }
+				</div>
+			</td>
 		</tr>
-	</table>
+	</table> -->
 
 	<hr>
 	<br>
@@ -292,8 +319,8 @@
 		<tr>
 			<td width=400px>
 				<left>
-					<center><h1>Acknowledgements</h1></center>
-					This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
+					<center><h4>Acknowledgements</h4></center>
+					The design of this page was borrowed and modified from the template made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
 				</left>
 			</td>
 		</tr>
