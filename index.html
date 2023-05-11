@@ -118,7 +118,7 @@
 
 <html>
 <head>
-	<title>This is my paper title</title>
+	<title>Enhancing Datalog Reasoning with Hypertree Decompositions</title>
 	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
 	<meta property="og:title" content="Creative and Descriptive Paper Title." />
 	<meta property="og:description" content="Paper description." />
@@ -164,7 +164,7 @@
 					</td>
 				</tr>
 			</table>
-			<!-- <table align=center width=250px>
+			<table align=center width=250px>
 				<tr>
 					<td align=center width=120px>
 						<center>
@@ -173,11 +173,11 @@
 					</td>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href='https://github.com/richzhang/webpage-template'>[GitHub]</a></span><br>
+							<span style="font-size:24px"><a href='https://github.com/xyzBubble/HDReasoning-Benchmarks/tree/main'>[GitHub]</a></span><br>
 						</center>
 					</td>
 				</tr>
-			</table> -->
+			</table>
 		</table>
 	</center>
 
@@ -206,7 +206,7 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				Datalog reasoning based on the semina\"ive evaluation strategy evaluates rules using traditional join plans, which often leads to redundancy and inefficiency in practice, especially when the rules are complex. Hypertree decompositions help identify efficient query plans and reduce similar redundancy in query answering. However, it is unclear how this can be applied to materialisation and incremental reasoning with recursive Datalog programs. Moreover, hypertree decompositions require additional data structures and thus introduce nonnegligible overhead in both runtime and memory consumption. In this paper, we provide algorithms that exploit hypertree decompositions for the materialisation and incremental evaluation of Datalog programs. Furthermore, we combine this approach with standard Datalog reasoning algorithms in a modular fashion so that the overhead caused by the decompositions is reduced. Our empirical evaluation shows that, when the program contains complex rules, the combined approach is usually significantly faster than the baseline approach, sometimes by orders of magnitude.
+				In this paper, we provide algorithms that exploit hypertree decompositions for the materialisation and incremental evaluation of Datalog programs. Furthermore, we combine this approach with standard Datalog reasoning algorithms in a modular fashion so that the overhead caused by the decompositions is reduced. Our empirical evaluation shows that, when the program contains complex rules, the combined approach is usually significantly faster than the baseline approach, sometimes by orders of magnitude.
 			</td>
 		</tr>
 	</table>
@@ -252,11 +252,11 @@
 		<center>
 			<tr>
 				<td>
-					We have implemented our approach based on an old version of RDFox. The linux executables are available <a href="https://github.com/xyzBubble/HDReasoning-Benchmarks/tree/main/executable">here</a>.
-					- <i>standard</i>: This system uses seminaive algorithm for materialisation and an optimised variant of DRed for incremental maintenance. 
-					- <i>HD</i>: This system uses our hypertree decomposition based algorithms.
-					- <i>Combined</i>: This system applies HD algorithms to complex (i.e., cyclic) rules and the standard algorithms to the remaining rules.
-					The source code is available upon request at xinyue.zhang AT cs.ox.ac.uk.
+					We have implemented our approach based on an old version of RDFox. The linux executables are available <a href="https://github.com/xyzBubble/HDReasoning-Benchmarks/tree/main/executable">here</a>. <br>
+					- <i>standard</i>: This system uses seminaive algorithm for materialisation and an optimised variant of DRed for incremental maintenance. <br>
+					- <i>HD</i>: This system uses our hypertree decomposition based algorithms. <br>
+					- <i>Combined</i>: This system applies HD algorithms to complex (i.e., cyclic) rules and the standard algorithms to the remaining rules. <br>
+					The source code is available upon request at xinyue.zhang AT cs.ox.ac.uk. 
 				</td>
 			</tr>
 		</center>
@@ -280,42 +280,42 @@
 			</tr>
 		</center>
 	</table>
-	<!-- <hr>
+	<br>
+	<hr>
 	<table align=center width=450px>
 		<center><h1>Paper and Supplementary Material</h1></center>
 		<tr>
 			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
-			<td><span style="font-size:14pt">F. Author, S. Author, T. Author.<br>
-				<b>Creative and Descriptive Paper Title.</b><br>
+			<td><span style="font-size:14pt">Xinyue Zhang, Pan Hu, Yavor Nenov, Ian Horrocks.<br>
+				<b>Enhancing Datalog Reasoning with Hypertree Decompositions.</b><br>
 				In IJCAI, 2023.<br>
-				(hosted on <a href="">ArXiv</a>)<br>
 				<a href="./resources/camera-ready.pdf">camera ready</a><br>
 				<span style="font-size:4pt"><a href=""><br></a>
 				</span>
 			</td>
 		</tr>
 	</table>
-	<br> -->
+	<br> 
 
-	<!-- <table align=center width=750px>
+	<table align=center width=750px>
 		<tr>
 			<td>
 				<div style="color:#171B21; background-color:#F5F5F5; border: 1px solid #CCCCCC;; border-radius:5px; padding:10px; font-family: menlo; font-size: 0.8em">
-					@inproceedings{wen2022slotcon,<br>
-					&nbsp title={Self-Supervised Visual Representation Learning with Semantic Grouping},<br>
-					&nbsp author={Wen, Xin and Zhao, Bingchen and Zheng, Anlin and Zhang, Xiangyu and Qi, Xiaojuan},<br>
-					&nbsp booktitle={Advances in Neural Information Processing Systems},<br>
-					&nbsp year={2022}<br>
+					@inproceedings{zhang2023enhancing,<br>
+					&nbsp title={Enhancing Datalog Reasoning with Hypertree Decompositions},<br>
+					&nbsp author={Zhang, Xinyue and Hu, Pan and Nenov, Yavor and Horrocks, Ian},<br>
+					&nbsp booktitle={International Joint Conferences on Artificial Intelligence},<br>
+					&nbsp year={2023}<br>
 					  }
 				</div>
 			</td>
 		</tr>
-	</table> -->
+	</table>
 
 	<hr>
 	<br>
 
-	<table align=center width=900px>
+	<!-- <table align=center width=900px>
 		<tr>
 			<td width=400px>
 				<left>
@@ -324,7 +324,7 @@
 				</left>
 			</td>
 		</tr>
-	</table>
+	</table> -->
 
 <br>
 </body>
